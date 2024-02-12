@@ -26,7 +26,7 @@ def create_documents(df):
             document[variable_name] = {
                 'Variable_category': row['Variable_category'],
                 'Units': row['Units'],
-                'Value': int(row['Value'])  # Convert numpy.int64 to Python int
+                'Value': int(row['Value'])  # Convertir a  numpy.int64
             }
         documents.append(document)
     return documents
